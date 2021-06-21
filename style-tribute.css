@@ -1,0 +1,156 @@
+/* RB checked @https://validator.w3.org/nu/#textarea  */
+
+body {
+font-size: 16px;
+font-family: Arial, monospace;
+background:rgb(88, 6, 6);
+padding: 10px;
+}
+
+h1, h3 {    
+    text-align: center;    
+}
+
+p {
+    text-align: left;
+}
+  
+ul {   
+    list-style: inside;
+}
+  
+ol {
+    list-style: inside;
+    list-style: disc;
+}
+  
+li {
+    margin-bottom: 1.0rem;
+}   
+
+
+#main {
+    
+    background: rgb(207, 162, 117);
+    color: black;  
+    padding: 5px;
+    border: 15px thick rgb(19, 104, 133);
+    border-style: double;  
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;    
+    font: bolder; 
+    text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;       
+}
+
+#img-div {     
+  
+    max-width: 1000px; 
+    margin: auto;  
+    display: flex;
+    flex-flow: column; 
+    flex-grow: 1 ;
+    flex-shrink: 1;
+    flex-basis: 0;
+    justify-content: center;  
+    vertical-align: center;   
+    padding: 5px ;
+    border: thick  rgb(126, 109, 109) ;
+    border-style: solid;
+    position: static;
+     
+  }
+
+  #image {    
+    max-height: 100%;
+    max-width: 100%;   
+    position: static;   
+  }
+
+  #img-caption {  
+    font: italic smaller sans-serif;
+    padding: 2px;
+    text-align: center;
+    color: black ;
+    background-color: rgb(70, 56, 56);
+    caption-side: top;
+    
+  }
+    
+  #tribute-info {
+    
+    margin: auto;
+    padding: 5px;
+    border: 55px thick rgb(64, 72, 75) ;
+    border-style:groove ;
+    
+  }
+  
+  
+
+
+a {
+color: black;
+}
+
+a:hover {
+color:blue;
+}
+
+
+footer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px; 
+  text-align: center;  
+}
+
+/* 
+I started on V Code editer and showing Warnings as below:
+Selectors should not contain IDs because these rules are too tightly coupled with the HTML.? 
+*/
+
+#tribute-link, #tribute-link2, #tribute-link3{
+  background: rgb(18, 245, 18);
+  text-decoration: solid;
+
+}
+
+#img-logo {
+  display: flex;
+  flex: auto;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 480px){
+    body { /* let  the letters larger for mobile*/
+        font-size: 18px;
+        font-family: Helvetica, monospace;
+        
+        }
+        
+    
+}
+
+/**
+#Tribute Page tests
+passes:10 failures:0 duration:0.04
+#Technology Stack
+1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+#Content
+1. My tribute page should have an element with corresponding id="main", which contains all other elements.
+2. I should see an element with corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+3. I should see either a <figure> or <div> element with corresponding id="img-div".
+4. Within the "img-div" element, I should see an <img> element with a corresponding id="image".
+5. Within the "img-div" element, I should see either a <figcaption> or <div> element with a corresponding id="img-caption" that contains textual content describing the image shown in "img-div".
+6. I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+7. I should see an <a> element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to "_blank" in order for your link to open in a new tab (i.e. target="_blank").
+#Layout
+1. The <img> element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+2. The <img> element should be centered within its parent element.
+
+
+**/
