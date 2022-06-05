@@ -1,3 +1,5 @@
 Web development project with FreeCodeCamp.org
 
-html+CSS +JS
+A Tribute webpage of a person in computer Programming field.
+
+html+CSS 

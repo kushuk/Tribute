@@ -1,5 +1,13 @@
 /* RB checked @https://validator.w3.org/nu/#textarea  */
 
+/* Default setting for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+ 
+
 body {
 font-size: 16px;
 font-family: Arial, monospace;
@@ -125,13 +133,12 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
   align-items: flex-end;
 }
 
-@media screen and (max-width: 480px){
-    body { /* let  the letters larger for mobile*/
+@media only screen and (max-width: 480px){
+    body { /* let  the letters made larger for mobile*/
         font-size: 18px;
         font-family: Helvetica, monospace;
         
-        }
-        
+    }       
     
 }
 
