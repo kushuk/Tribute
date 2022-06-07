@@ -7,16 +7,11 @@
   box-sizing: border-box;  
 }
  
-
 body {
 font-size: 16px;
 font-family: Arial, monospace;
 background:rgb(192, 33, 33);
-padding: 10px;
-}
-
-h1, h3 {    
-    text-align: center;    
+padding: 30px;
 }
 
 p {
@@ -37,8 +32,7 @@ li {
 }   
 
 
-#main {
-    
+#main {    
     background: rgb(207, 162, 117);
     color: black;  
     padding: 5px;
@@ -53,8 +47,14 @@ li {
     text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;       
 }
 
-#img-div {     
-  
+
+#title h1, 
+#title p {    
+  text-align: center; 
+  word-wrap: break-word;   
+}
+
+#img-div {    
     max-width: 1000px; 
     margin: auto;  
     display: flex;
@@ -67,38 +67,31 @@ li {
     padding: 5px ;
     border: thick  rgb(126, 109, 109) ;
     border-style: solid;
-    position: static;
-     
-  }
+    position: static;     
+}
 
-  #image {    
+#image {    
     max-height: 100%;
     max-width: 100%;   
     position: static;   
-  }
+}
 
-  #img-caption {  
+#img-caption {  
     font: italic smaller sans-serif;
     padding: 2px;
     text-align: center;
     color: black ;
-    background-color: rgb(70, 56, 56);
-    caption-side: top;
+    background-color: rgb(134, 101, 101);
+    caption-side: top;    
+}
     
-  }
-    
-  #tribute-info {
-    
+#tribute-info {    
     margin: auto;
     padding: 5px;
     border: 55px thick rgb(64, 72, 75) ;
-    border-style:groove ;
-    
-  }
+    border-style:groove ;    
+}
   
-  
-
-
 a {
 color: black;
 }
@@ -106,7 +99,6 @@ color: black;
 a:hover {
 color:blue;
 }
-
 
 footer {
   margin: auto;
@@ -134,15 +126,21 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
 }
 
 @media only screen and (max-width: 480px){
-    body { /* let  the letters made larger for mobile*/
-        font-size: 18px;
-        font-family: Helvetica, monospace;
-        
-    }       
-    
+  body { /* let  the letters made larger for mobile*/
+    font-size: 20px;
+    font-family: Helvetica, monospace;    
+    padding: 20px;  
+  }  
+  
+  #image {  
+    height: fit-content;
+    width: fit-content;   
+    position: static;   
+  }    
 }
 
-/**
+/*********
+
 #Tribute Page tests
 passes:10 failures:0 duration:0.04
 #Technology Stack
@@ -160,4 +158,4 @@ passes:10 failures:0 duration:0.04
 2. The <img> element should be centered within its parent element.
 
 
-**/
+*********/
