@@ -14,24 +14,6 @@ background:rgb(192, 33, 33);
 padding: 30px;
 }
 
-p {
-    text-align: left;
-}
-  
-ul {   
-    list-style: inside;
-}
-  
-ol {
-    
-    list-style: disc;
-}
-  
-li {
-    margin-bottom: 1.0rem;
-}   
-
-
 #main {    
     background: rgb(207, 162, 117);
     color: black;  
@@ -87,10 +69,24 @@ li {
     
 #tribute-info {    
     margin: auto;
-    padding: 5px;
+    padding: 25px;
     border: 55px thick rgb(64, 72, 75) ;
     border-style:groove ;    
 }
+
+
+#tribute-info ul {   
+  list-style: inside;
+}
+
+#tribute-info ol {    
+  list-style: square;
+}
+
+#tribute-info li {
+  margin-bottom: 1.0rem;
+}   
+
   
 a {
 color: black;
@@ -133,8 +129,8 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
   }  
   
   #image {  
-    height: fit-content;
-    width: fit-content;   
+    height: auto;
+    width: auto;   
     position: static;   
   }    
 }
