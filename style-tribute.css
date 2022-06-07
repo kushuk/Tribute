@@ -26,7 +26,8 @@ padding: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;    
     font: bolder; 
-    text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;       
+    text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
+    padding: 25px;   
 }
 
 
