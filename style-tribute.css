@@ -27,14 +27,14 @@ padding: 30px;
     font-size: 40px;    
     font: bolder; 
     text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
-    padding: 25px;   
+    padding: 20px;   
 }
 
 
 #title h1, 
 #title p {    
   text-align: center; 
-  word-wrap: break-word;   
+  word-wrap: normal;   
 }
 
 #img-div {    
@@ -86,29 +86,7 @@ padding: 30px;
 
 #tribute-info li {
   margin-bottom: 1.0rem;
-}   
-
-  
-a {
-color: black;
-}
-
-a:hover {
-color:blue;
-}
-
-footer {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  padding: 10px; 
-  text-align: center;  
-}
-
-/* 
-I started on V Code editer and showing Warnings as below:
-Selectors should not contain IDs because these rules are too tightly coupled with the HTML.? 
-*/
+}  
 
 #tribute-link, #tribute-link2, #tribute-link3{
   background: rgb(18, 245, 18);
@@ -122,18 +100,49 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
   align-items: flex-end;
 }
 
+#footer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px; 
+  text-align: center;  
+}
+
+  
+a {
+color: black;
+}
+
+a:hover {
+color:blue;
+}
+
+
+
+/* 
+I started on V Code editer and showing Warnings as below:
+Selectors should not contain IDs because these rules are too tightly coupled with the HTML.? 
+*/
+
+
 @media only screen and (max-width: 480px){
   body { /* let  the letters made larger for mobile*/
     font-size: 20px;
     font-family: Helvetica, monospace;    
     padding: 20px;  
   }  
+
+#title h1, 
+#title p {    
+  text-align: center; 
+  word-wrap: break-word;   
+}
   
   #image {  
-    height: auto;
-    width: auto;   
-    position: static;   
-  }    
+    height: 450px;
+    width: 400px;   
+  }   
+
 }
 
 /*********
