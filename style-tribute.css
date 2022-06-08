@@ -123,13 +123,14 @@ color:blue;
 I started on V Code editer and showing Warnings as below:
 Selectors should not contain IDs because these rules are too tightly coupled with the HTML.? 
 */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) and (min-width: 480px) {
   #title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;    
     font: bolder; 
     text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
-    padding: 15px;   
+    padding: 15px;  
+    background-color: aqua; 
   }
   #image {  
     height: 650px;
@@ -138,10 +139,10 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 479px){
 
   body { /* let  the letters made larger for mobile*/
-    font-size: 20px;
+    font-size: 18px;
     font-family: Helvetica, monospace;    
     padding: 10px;  
   }  
@@ -151,6 +152,7 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
     font: bolder; 
     text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
     padding: 15px;   
+    background-color: aqua;  
   }
   #title h1, 
   #title p {    
