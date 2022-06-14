@@ -40,26 +40,19 @@ padding: 30px;
   word-wrap: normal;   
 }
 
-#img-div {    
-    max-width: 1000px; 
-    margin: auto;  
-    display: flex;
-    flex-flow: column; 
-    flex-grow: 1 ;
-    flex-shrink: 1;
-    flex-basis: 0;
-    justify-content: center;  
-    vertical-align: center;   
+#img-div { 
+    display: flexbox;
+    margin: 0 auto;
     padding: 5px ;
     border: thick  rgb(126, 109, 109) ;
     border-style: solid;
     position: static;     
 }
 
-#image {    
-    max-height: 100%;
-    max-width: 100%;   
-    position: static;   
+#image {   
+    display: block; 
+    max-height: 100% ;
+    max-width: 100%;
 }
 
 #img-caption {  
@@ -132,7 +125,7 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
 */
 @media only screen 
   and (max-width: 770px)
-  and (min-width: 501px) {
+  and (min-width: 480px) {
 
   #title {
     font-family: 'Times New Roman', Times, serif;
@@ -142,15 +135,11 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
     padding: 15px;  
   }
 
-  #image {  
-    height: 750px;
-    width: 500px;   
-  }
 }
 
 
 @media only screen 
-  and (max-width: 500px) {
+  and (max-width: 479px) {
 
   html,
   body { /* let  the letters made larger for mobile*/
@@ -173,10 +162,7 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
   word-wrap: break-word;   
   }  
   
-  #image {  
-    height: 450px;
-    width: 390px;   
-  }
+  
   #footer {
     margin: auto;
     display: flex;
