@@ -5,8 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
  
 html,
@@ -41,7 +39,7 @@ padding: 30px;
 }
 
 #img-div { 
-    display: flexbox;
+    display: block;
     margin: 0 auto;
     padding: 5px ;
     border: thick  rgb(126, 109, 109) ;
