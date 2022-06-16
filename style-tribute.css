@@ -9,28 +9,27 @@
  
 html,
 body {
-font-size: 16px;
-font-family: Arial, monospace;
-background:rgb(192, 33, 33);
-padding: 30px;
+  font-size: 16px;
+  font-family: Arial, monospace;
+  background:rgb(192, 33, 33);
+  padding: 30px;
 }
 
 #main {    
-    background: rgb(207, 162, 117);
-    color: black;  
-    padding: 5px;
-    border: 15px thick rgb(19, 104, 133);
-    border-style: double;  
+  background: rgb(207, 162, 117);
+  color: black;  
+  padding: 5px;
+  border: 15px thick rgb(19, 104, 133);
+  border-style: double;  
 }
 
 #title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;    
-    font: bolder; 
-    text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
-    padding: 20px;   
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;    
+  font: bolder; 
+  text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
+  padding: 20px;   
 }
-
 
 #title h1, 
 #title p {    
@@ -39,34 +38,34 @@ padding: 30px;
 }
 
 #img-div { 
-    display: block;
-    margin: 0 auto;
-    padding: 5px ;
-    border: thick  rgb(126, 109, 109) ;
-    border-style: solid;
-    position: static;     
+  display: block;
+  margin: 0 auto;
+  padding: 5px ;
+  border: thick  rgb(126, 109, 109) ;
+  border-style: solid;
+  position: static;     
 }
 
 #image {   
-    display: block; 
-    max-height: 100% ;
-    max-width: 100%;
+  display: block; 
+  max-height: 100% ;
+  max-width: 100%;
 }
 
 #img-caption {  
-    font: italic smaller sans-serif;
-    padding: 2px;
-    text-align: center;
-    color: black ;
-    background-color: rgb(134, 101, 101);
-    caption-side: top;    
+  font: italic smaller sans-serif;
+  padding: 2px;
+  text-align: center;
+  color: black ;
+  background-color: rgb(134, 101, 101);
+  caption-side: top;    
 }
     
 #tribute-info {    
-    margin: auto;
-    padding: 25px;
-    border: 55px thick rgb(64, 72, 75) ;
-    border-style:groove ;    
+  margin: auto;
+  padding: 25px;
+  border: 55px thick rgb(64, 72, 75) ;
+  border-style:groove ;    
 }
 
 
@@ -85,7 +84,6 @@ padding: 30px;
 #tribute-link, #tribute-link2, #tribute-link3{
   background: rgb(18, 245, 18);
   text-decoration: solid;
-
 }
 
 #img-logo {
@@ -105,14 +103,18 @@ padding: 30px;
   text-align: center;  
 }
 
+#footer p {
+  margin-bottom: 10px;
+}
+
   
 a {
-color: black;
+  color: black;
 }
 
 a:hover,
 a:focus {
-color:blue;
+  color:blue;
 }
 
 
