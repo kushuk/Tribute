@@ -9,16 +9,19 @@
  
 html,
 body {
+  min-height: 100vh;
+  width: 100wv;
   font-size: 16px;
   font-family: Arial, monospace;
   background:rgb(192, 33, 33);
-  padding: 30px;
+  
 }
 
-#main {    
+#main {  
+  display: block;  
   background: rgb(207, 162, 117);
   color: black;  
-  padding: 5px;
+  padding: 2em;
   border: 15px thick rgb(19, 104, 133);
   border-style: double;  
 }
@@ -37,18 +40,19 @@ body {
   word-wrap: normal;   
 }
 
-#img-div { 
-  display: block;
-  margin: 0 auto;
+#img-div {   
+  display: inline-block;  
   padding: 5px ;
   border: thick  rgb(126, 109, 109) ;
   border-style: solid;
-  position: static;     
+  position: relative; 
+  margin-bottom: 0.5em;
 }
 
-#image {   
-  display: block; 
-  max-height: 100% ;
+#image {  
+  display: block;
+  margin: auto;
+  height: auto;
   max-width: 100%;
 }
 
@@ -56,16 +60,19 @@ body {
   font: italic smaller sans-serif;
   padding: 2px;
   text-align: center;
-  color: black ;
-  background-color: rgb(134, 101, 101);
+  color: rgb(192, 171, 171) ;
+  background-color: rgb(75, 50, 50);
   caption-side: top;    
 }
     
-#tribute-info {    
-  margin: auto;
-  padding: 25px;
+#tribute-info { 
+  display: block; 
+  margin-top: 0.5em;  
+  margin-bottom: 0.5em; 
+  padding: 2em;
   border: 55px thick rgb(64, 72, 75) ;
-  border-style:groove ;    
+  border-style:groove ;   
+  position: relative;
 }
 
 
@@ -78,7 +85,7 @@ body {
 }
 
 #tribute-info li {
-  margin-bottom: 1.0rem;
+  margin-bottom: 1.0em;
 }  
 
 #tribute-link, #tribute-link2, #tribute-link3{
@@ -141,17 +148,16 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
 
   html,
   body { /* let  the letters made larger for mobile*/
+    
     font-size: 18px;
-    font-family: Helvetica, monospace;    
-    padding: 10px;  
+    font-family: Helvetica, monospace; 
   }  
 
   #title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;    
     font: bolder; 
-    text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000;    
-    padding: 15px;   
+    text-shadow: 2px 2px 2px #fff, 3px 3px 2px #000; 
   }
 
   #title h1, 
