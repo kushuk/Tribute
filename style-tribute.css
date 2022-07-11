@@ -130,9 +130,9 @@ a:focus {
 I started on V Code editer and showing Warnings as below:
 Selectors should not contain IDs because these rules are too tightly coupled with the HTML.? 
 */
-@media only screen 
+@media screen 
   and (max-width: 770px)
-  and (min-width: 480px) {
+  and (min-width: 481px) {
 
   #title {
     font-family: 'Times New Roman', Times, serif;
@@ -143,8 +143,8 @@ Selectors should not contain IDs because these rules are too tightly coupled wit
   }
 }
 
-@media only screen 
-  and (max-width: 479px) {
+@media screen 
+  and (max-width: 480px) {
 
   html,
   body { /* let  the letters made larger for mobile*/
